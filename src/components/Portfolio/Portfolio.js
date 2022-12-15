@@ -4,7 +4,7 @@ import ProjectList from '../ProjectList/ProjectList';
 
 class Portfolio extends React.Component {
 
-    function handlerList(){
+    handlerList(){
         return state.selected === "All"
           ? props.list
           : props.list.filter((item) => item.category === state.selected);
